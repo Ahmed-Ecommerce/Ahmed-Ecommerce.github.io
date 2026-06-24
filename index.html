@@ -1,33 +1,207 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-<title>Ahmed | Professional Portfolio</title>
+<meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ahmed | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
 body{
-font-family:Arial,sans-serif;
-max-width:1000px;
-margin:auto;
-padding:30px;
-line-height:1.6;
+overflow-x:hidden;
+background:#d9d9d9;
 }
 
-header{
-text-align:center;
-padding:60px 0;
+.container{
+display:flex;
+height:100vh;
 }
 
-h1{
-font-size:48px;
+.left{
+width:50%;
+background:#d9d9d9;
+padding:60px 80px;
+display:flex;
+flex-direction:column;
+justify-content:center;
 }
 
-section{
-margin:50px 0;
+.right{
+width:50%;
+background:#000;
+clip-path:polygon(15% 0%,100% 0%,100% 100%,0% 100%);
+position:relative;
+}
+
+nav{
+position:absolute;
+top:40px;
+right:60px;
+display:flex;
+gap:60px;
+align-items:center;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+font-weight:600;
+}
+
+.contact-btn{
+background:#fff;
+color:#000;
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+}
+
+.logo{
+font-size:40px;
+font-weight:800;
+margin-bottom:80px;
+}
+
+.intro{
+font-size:50px;
+font-weight:600;
+}
+
+.name{
+font-size:80px;
+font-weight:800;
+line-height:1.1;
+margin:20px 0;
+}
+
+.title{
+font-size:32px;
+font-weight:600;
+color:#7a7a7a;
+margin-bottom:25px;
+}
+
+.desc{
+font-size:20px;
+max-width:600px;
+line-height:1.7;
+}
+
+.socials{
+display:flex;
+gap:25px;
+margin-top:60px;
+}
+
+.socials a{
+width:60px;
+height:60px;
+background:#fff;
+border-radius:10px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+color:#000;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-image{
+
+position:absolute;
+
+bottom:0;
+
+left:55%;
+
+transform:translateX(-50%);
+
+height:85%;
+
+}
+
+.bottom{
+background:#111;
+color:#fff;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:40px 60px;
+}
+
+.card{
+padding:20px;
+border-right:1px solid #444;
+}
+
+.card:last-child{
+border:none;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.8;
+color:#d7d7d7;
+}
+
+@media(max-width:1000px){
+
+.container{
+flex-direction:column;
+height:auto;
+}
+
+.left,
+.right{
+width:100%;
+}
+
+.right{
+height:600px;
+clip-path:none;
+}
+
+.bottom{
+grid-template-columns:1fr;
+}
+
+nav{
+position:relative;
+top:20px;
+right:0;
+justify-content:center;
+}
+
+.name{
+font-size:50px;
+}
+
 }
 
 </style>
@@ -36,54 +210,144 @@ margin:50px 0;
 
 <body>
 
-<header>
+<div class="container">
 
-<h1>Ahmed</h1>
+<div class="left">
 
-<h3>Professional Portfolio</h3>
+<div class="logo">
 
-<p>Welcome to my personal website.</p>
+AH
 
-</header>
+</div>
 
-<section>
+<div class="intro">
 
-<h2>About Me</h2>
+Hi, I am
 
-<p>I am an e-commerce professional passionate about automation and online business.</p>
+</div>
 
-</section>
+<div class="name">
 
-<section>
+Ahmed Hussain
 
-<h2>Skills</h2>
+</div>
 
-<ul>
+<div class="title">
 
-<li>Amazon Seller Central</li>
+E-commerce Specialist / Automation Expert
 
-<li>Flipkart</li>
+</div>
 
-<li>Myntra</li>
+<div class="desc">
 
-<li>Shopify</li>
+I help brands and sellers grow their online business through marketplace management, Shopify and automation solutions.
 
-<li>n8n Automation</li>
+</div>
 
-<li>Excel</li>
+<div class="socials">
 
-</ul>
+<a href="#">
 
-</section>
+<i class="fas fa-envelope"></i>
 
-<section>
+</a>
 
-<h2>Contact</h2>
+<a href="#">
 
-<p>Add your email and LinkedIn profile here.</p>
+<i class="fab fa-github"></i>
 
-</section>
+</a>
+
+<a href="#">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="right">
+
+<nav>
+
+<a href="#">About me</a>
+
+<a href="#">Skills</a>
+
+<a href="#">Portfolio</a>
+
+<a href="#" class="contact-btn">
+
+CONTACT ME
+
+</a>
+
+</nav>
+
+<img
+class="profile-image"
+src="https://images.unsplash.com/photo-1500648767791-00dcc994a43?w=900"
+>
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<div class="card">
+
+<h3>About Me</h3>
+
+<p>
+
+Results-driven e-commerce professional with expertise in marketplace management and automation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Experience</h3>
+
+<p>
+
+3+ years of experience in e-commerce operations and process automation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Skills</h3>
+
+<p>
+
+Amazon, Flipkart, Myntra, Shopify, n8n, Excel, Google Sheets and APIs.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Let's Connect</h3>
+
+<p>
+
+Open to discussing projects, opportunities and collaborations.
+
+</p>
+
+</div>
+
+</div>
 
 </body>
 
 </html>
+```
